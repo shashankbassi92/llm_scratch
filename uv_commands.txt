@@ -1,0 +1,14 @@
+# Git clone this repo
+
+# Install system-wide uv
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+
+
+# From parent directory of project
+    uv init llm_scratch -p 3.11
+    cd llm_scratch
+    uv venv --python=python3.11
+    source .venv/bin/activate
+    uv pip install packages
+    uv pip install torch
+    uv pip install tensorflow
